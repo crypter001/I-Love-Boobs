@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>My_portfolio2</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="toggle" onclick="toggleMenu();"></div>
+
+    <section class="banner" id="home">
+
+        <div class="imgsidebar">
+            <!-- aman -->
+            <img src="./img/bg.jpg" alt="bg">
+        </div>
+        <div class="contentbx">
+            <h5 class="logotext">MY_PORTFOLIO</h5>
+            <div>
+                <h4><span>Hello,</span> I'm </h4>
+                <h2>Mohammad Aamir</h2>
+                <h4>I'm a front end web developer</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid mollitia odio, cumque eveniet dignissimos velit impedit voluptates rem itaque, porro numquam deleniti vel nostrum magni? Quasi, neque. Doloremque, distinctio voluptatum?</p>
+                <a href="#" class="btn">About Me</a>
+            </div>
+                    <ul class="sci">
+                        <li><a href="#"><img src="./img/facebook.png" alt="facebook"></a></li>
+                        <li><a href="#"><img src="./img/instagram.png" alt="instagram"></a></li>
+                        <li><a href="#"><img src="./img/twitter.png" alt="twitter"></a></li>
+                    </ul>
+        </div>
+       
+        </div>
+    </section>
+
+    <section class="about" id="about">
+
+        <div class="title white">
+            <h2>About US</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At accusantium recusandae illum, </p>
+        </div>
+        <div class="content">
+            <div class="textbx">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora velit rem doloremque tenetur adipisci
+                    nulla, ipsum autem in eius magnam inve<br>ntore vel quia eum deleniti odit optio, consequatur odio minima!
+                    Voluptas ipsa deserunt illorchitecto ratione blanditiis fugiat reiciendis sint quam vel, doloremque alias
+                    deleniti nemo error sed obcaecati quaera<br>t quis! Vel delectus incidunt fuga libero inventore perferendis.
+                    Ea adipisci debitis, aspernatur culpa nisi nemo qui excepturi accusantium minus a labore officia eos?
+                    Perferendis porro temporibus in qui <br>mollitia! Dolorum, dignissimos tempora itaque nemo, quasi edita ab ratione
+                    eaque amet iure cum? Alias distinctio, impedit aliquid labore recusandae<br> voluptatem m eius
+                    aliquam iusto, fugiat similique laborum?</p>
+            </div>
+            <div class="imgbx">
+                <!-- aman -->
+                <img src="./img/bg1.jpg" alt="bg1">
+
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+    <div class="title">
+        <h2>Services</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At accusantium recusandae illum, </p>
+    </div>
+    <div class="img">
+        <img src="./img/img2.jpg" alt="">
+        <img src="./img/img3.jpg" alt="">
+        <img src="./img/img5.jpg" alt="">
+        <img src="./img/img6.jpg" alt="">
+        <img src="./img/img7.jpg" alt="">
+        <img src="./img/img8.jpg" alt="">
+    </div>
+
+    </section>
+
+
+
+
+    <div class="sideBar">
+        <ul class="menu">
+            <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu();"">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contacts</a></li>
+        </ul>
+    </div>
+
+    <script>
+
+        function toggleMenu(){
+        const menuToggle = document.querySelector('.toggle');
+          const sideBar = document.querySelector('.sideBar');
+        menuToggle.classList.toggle('active');
+        sideBar.classList.toggle('active');
+
+        }
+    </script>
+
+</body>
+</html>
